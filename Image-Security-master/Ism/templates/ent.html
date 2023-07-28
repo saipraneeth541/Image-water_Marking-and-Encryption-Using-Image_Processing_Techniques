@@ -1,0 +1,23 @@
+{% extends "layout.html" %} {% block content %}
+<br /><br /><br /><br /><br /><br /><br /><br />
+
+<div class="typewriter">
+  <h2>{{ title }}</h2>
+  <h3>{{ message }}</h3>
+  <br /><br />
+  <!-- <p>The file name is {{ name }}</p><br> -->
+  <p>
+    The Entropy Value of the Encrypted Image
+    <mark> &nbsp; {{ keys }} &nbsp;</mark>
+  </p>
+  <p>
+    The Entropy Value of the Decrypted Image
+    <mark> &nbsp; {{ images }} &nbsp;</mark>
+  </p>
+  <br /><br />
+</div>
+<div class="container" align="center">
+  <!-- <a href="/static/content/Encrypted.png" download=""><button class="btn btn-default btn-primary" align="center">Download</button></button></a> -->
+  <br /><br /><br /><br /><br /><br /><br />
+</div>
+{% endblock %}
